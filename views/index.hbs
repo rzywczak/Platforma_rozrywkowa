@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Platforma rozrywkowa</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>
+    {{!--
+    <script src="/public/script.js"></script> --}}
+    {{!--
+    <script src="/app.js"></script> --}}
+    {{!--
+    <script src="/public/client.js"></script> --}}
+
+</head>
+
+<body>
+
+    <div class="table">
+        <form class="form-table">
+            <label>Tworzenie Pokoju</label>
+            <input type="text" class="roomname-client" placeholder="nazwa pokoju">
+            <input type="password" class="create-password-client" placeholder="password">
+            <input type="number" class="room-type" placeholder="1-4">
+            <input type="submit" class="button-create-room" value="Utwórz">
+
+        </form>
+    </div>
+
+    <div class="table">
+        <form class="form-table">
+            <table class="main-table">
+
+                <hr>
+                <label>Gra pierwsza</label>
+                <input type="submit" class="button-client" value="Wybierz">
+                <input type="text" class="nickname-client" placeholder="nickname">
+                <input type="password" class="password-client" placeholder="password">
+                <label>Gra druga</label>
+                <input type="submit" class="button-client" value="Wybierz">
+                <label>Gra trzecia</label>
+                <input type="submit" class="button-client" value="Wybierz">
+                <label>Gra czwarta</label>
+                <input type="submit" class="button-client" value="Wybierz">
+            </table>
+        </form>
+    </div>
+
+    <script>
+
+        let createRoomButton = document.querySelector('.button-create-room');
+
+        createRoomButton.addEventListener('click', () => {
+
+            const roomName = document.querySelector('.roomname-client').value;
+            const password = document.querySelector('.create-password-client').value;
+            const roomId = document.querySelector('.room-type').value;
+
+            const data = { roomName, password, roomId };
+            const options = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            };
+            fetch('/api', options).then(res => {
+               console.log(res)
+            })
+              alert('Udało Ci się stowrzyć grupę');
+});
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
