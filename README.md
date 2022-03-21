@@ -3,7 +3,7 @@ Aplikacja webowa, na której będzie możliwe rozgrywanie gier w popularne gry l
 
 ## Jak uruchomić aplikację
 1.Pobierz aplikację i otwórz folder główny w konsoli
-2.Zainstaluj wszystkie moduły i biblioteki używając komendy 'npm i' 
+2.Zainstaluj wszystkie zależności używając komendy 'npm i' 
 3.Uruchom aplikację lokalnie używając komendy 'nodemon app.js'
 4.Otwórz w oknie przeglądarki wpisując 'http://localhost:3000'
 
@@ -18,12 +18,13 @@ Aplikacja webowa, na której będzie możliwe rozgrywanie gier w popularne gry l
 3.// kolejne funkcjonalności powstają
 
 ## Przyszłe funkcje
-1. Po dołączeniu do pokoju użytkownik będzie w poczekalni gdzie czeka na drugiego użytkownika do gry
-2. Po dołączeniu drugiego użytkownika jeden z nich będzie mógł wystartować rozgrywkę
-3. Funkcjonalność rozgrywki dla trybu gry "labirynt"(solo), "kółko i krzyżyk"(1vs1), "znajdź parę"(1vs1), "papier, kamień i nożyce"(1vs1/solo)
-4. Po zakończeniu gry zostanie wyświetlony zwycięzca oraz dwie opcje ponownej rozgrywki lub opuszczenia pokoju 
-5. Po wyjściu obu użytkowników pokój zostanie usunięty po pewnym czasie
-6. Wykonianie wyglądu przy użyciu CSS oraz Javascriptu.
+1. Wyswietlenie listy pokoi i dołączenie do jednego z nich 
+2. Po dołączeniu do pokoju użytkownik będzie w poczekalni gdzie czeka na drugiego użytkownika do gry
+3. Po dołączeniu drugiego użytkownika jeden z nich będzie mógł wystartować rozgrywkę
+4. Funkcjonalność rozgrywki dla trybu gry "labirynt"(solo), "kółko i krzyżyk"(1vs1), "znajdź parę"(1vs1), "papier, kamień i nożyce"(1vs1/solo)
+5. Po zakończeniu gry zostanie wyświetlony zwycięzca oraz dwie opcje ponownej rozgrywki lub opuszczenia pokoju 
+6. Po wyjściu obu użytkowników pokój zostanie usunięty po pewnym czasie
+7. Wykonianie wyglądu przy użyciu CSS oraz Javascriptu.
 
 ## Zależności 
 
