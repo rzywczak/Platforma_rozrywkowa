@@ -41,3 +41,5 @@ Aplikacja webowa, na której będzie możliwe rozgrywanie gier w popularne gry l
  - "socket.io-client"
  
 ## Jak aplikacja wygląda obecnie
+
+![alt text](https://github.com/rzywczak/Platforma_rozrywkowa/blob/master/pierwsze_zmiany.png)
